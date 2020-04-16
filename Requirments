@@ -1,0 +1,66 @@
+1.Executive Summary
+1.1	Project Overview
+Describe this project or product and its intended audience, or provide a link or reference to the project charter. 
+Our project’s aim is to create a software application to solve the technical issues for a kindergarten in Tirana.  The software’s name is ABC, same as the kindergarten, and it’s main idea is to provide technological help to the kindergarten administrator and fix all the communications bugs that exists within the business.  In the front end the administrator or any user who will have permission will see the page created with JavaScript /Bootstrap or Json and will access to each of the child’s date like his name, age, parent contact and any detail related with the monthly payment or his advance through the time he has been there. On the back end we will work with Php technology and all the data will be saved in a specific database. This will provide help to the kindergarten owner, administrator, economist or other people from human resource that work there. Based on the economic research we will do for the kindergarten, every problem the audience can’t get through is our project aim to solve. 
+A visual representation would be:
+ 
+
+1.2	Purpose and Scope of this Specification
+Describe the purpose of this specification and its intended audience.   Include a description of what is within the scope what is outside of the scope of these specifications. 
+In scope
+•	It’s aim is to conduct data from the specified database.
+•	For the administrator , he will be able to use the data provided to check with the advancment of the children or economic issues (like monthly payments).
+•	It will be user-friendly and with some simple buttons , you can be able to take the information needed.
+•	You can add information all the time or remove data.
+•	Legislative issues like the conduct of research is lawful and it data will not be misused.
+
+Out of Scope
+The following items in phase 3 of Project A are out of scope:
+•	Our aim is to help the kindergarten administrator or human resource staff or economist and it’s not our aim to provide information to outsiders
+•	Parent (customers) maybe be part of the research but the data is not provided to them neither the software is created to bring them help.
+•	This is not a demand from the customer side.
+•	Relations between the kindergarten and the kindergarten administrator will be affected.
+
+Product/Service Description
+In this section, describe the general factors that affect the product and its requirements. This section should contain background information, not state specific requirements (provide the reasons why certain specific requirements are later specified).
+1.3	Product Context
+How does this product relate to other products? Is it independent and self-contained?  Does it interface with a variety of related systems?  Describe these relationships or use a diagram to show the major components of the larger system, interconnections, and external interfaces.
+This product is independent and self-contained; it has no relation to other businesses expect the ABC kindergarten even though we conducted a market analysis to analyze the other technologies competitors were using.  Within the kindergarten itself it is related with the processes around the business itself, every data related to the customer (in our case the children and their parents) is the base for the functioning of our software. So the software is depended on the database that will provide the information for each child for their education field and also about the economic problems. If the kindergarten won’t provide data then the software would be unuseful because by collecting data through time it will help to find them easier again the future and reuse.
+
+1.4	User Characteristics
+Create general customer profiles for each type of user who will be using the product. Profiles should include:
+Our software will include only one user that is the administrator of the kindergarten but they can provide access to the economist or other human resource department specialist and the kindergarten owner in case they need to check or audit the data.
+The administrator of the software is the same person, who administrates the kindergarten in real life. She will update the data in a specific amount of time (for example each month). She will make sure all the confidential data is entered in the right way and only used for lawful purposes,  by also deciding who she will provide access too. 
+Technical expertise for the software of course it granted by us since the kindergarten doesn’t have an IT specialist.
+Security will also be checked from the supervisors of the administrator, who can be the owner itself or human resource specialists.
+
+2.3 Assumptions
+The system administrator should always keep the system up to date everyday. All
+information of the day of each child should be sent to the respective day,
+everyday. Every operation and action taken during that day, should be written on
+the system, not days later. Ex: if a payment is done, today it should be registered
+today, if the system does not work then it should be written in a diary of
+administrator and on the day that it should be registered, administrator will leave a
+comment about the exact day of payment.
+As we have stated earlier, we will send the information of the day of each kid in
+Whatsapp, if at one day, the system is not working properly, we will change to
+SMS not Whatsapp, in order not to delay the information to the parents.
+
+2.4 Constraints
+Before we used to keep our data in Excel and Word files and before we start working
+with the software we should spend some time transferring data from those files to
+the app.
+The kindergarten will not have an IT specialist working all time there, so sometimes that
+the administrator may have problems, they will have to wait for our service and this
+may take a bit longer.
+Also, for the security reasons because that software will have much confidential and
+personal information we should have a file for log-ins in the app.
+This app, is going to work only on computers and may be difficult if the administrator
+would like to use it on the phone or somewhere else.
+2.5 Dependencies
+Our software program will be extremely dependent on the Database that will provide the
+information for each child for their education field and also about the economic
+problems. If the kindergarten won’t provide data then the software would be unuseful.
+We are also dependent on the parents a little bit, if they do not like the idea of only
+sending them Whatsapp messages, we have to change the way of keeping them up to
+date, anyways this can happen after we start using the app in the kindergarten.
