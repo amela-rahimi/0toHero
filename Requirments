@@ -1,4 +1,4 @@
-1.Executive Summary
+1.	Executive Summary
 1.1	Project Overview
 Describe this project or product and its intended audience, or provide a link or reference to the project charter. 
 Our project’s aim is to create a software application to solve the technical issues for a kindergarten in Tirana.  The software’s name is ABC, same as the kindergarten, and it’s main idea is to provide technological help to the kindergarten administrator and fix all the communications bugs that exists within the business.  In the front end the administrator or any user who will have permission will see the page created with JavaScript /Bootstrap or Json and will access to each of the child’s date like his name, age, parent contact and any detail related with the monthly payment or his advance through the time he has been there. On the back end we will work with Php technology and all the data will be saved in a specific database. This will provide help to the kindergarten owner, administrator, economist or other people from human resource that work there. Based on the economic research we will do for the kindergarten, every problem the audience can’t get through is our project aim to solve. 
@@ -21,46 +21,241 @@ The following items in phase 3 of Project A are out of scope:
 •	This is not a demand from the customer side.
 •	Relations between the kindergarten and the kindergarten administrator will be affected.
 
-Product/Service Description
+2.	Product/Service Description
 In this section, describe the general factors that affect the product and its requirements. This section should contain background information, not state specific requirements (provide the reasons why certain specific requirements are later specified).
-1.3	Product Context
+2.1	Product Context
 How does this product relate to other products? Is it independent and self-contained?  Does it interface with a variety of related systems?  Describe these relationships or use a diagram to show the major components of the larger system, interconnections, and external interfaces.
 This product is independent and self-contained; it has no relation to other businesses expect the ABC kindergarten even though we conducted a market analysis to analyze the other technologies competitors were using.  Within the kindergarten itself it is related with the processes around the business itself, every data related to the customer (in our case the children and their parents) is the base for the functioning of our software. So the software is depended on the database that will provide the information for each child for their education field and also about the economic problems. If the kindergarten won’t provide data then the software would be unuseful because by collecting data through time it will help to find them easier again the future and reuse.
 
-1.4	User Characteristics
+
+
+
+ 
+2.2	User Characteristics
 Create general customer profiles for each type of user who will be using the product. Profiles should include:
 Our software will include only one user that is the administrator of the kindergarten but they can provide access to the economist or other human resource department specialist and the kindergarten owner in case they need to check or audit the data.
 The administrator of the software is the same person, who administrates the kindergarten in real life. She will update the data in a specific amount of time (for example each month). She will make sure all the confidential data is entered in the right way and only used for lawful purposes,  by also deciding who she will provide access too. 
 Technical expertise for the software of course it granted by us since the kindergarten doesn’t have an IT specialist.
 Security will also be checked from the supervisors of the administrator, who can be the owner itself or human resource specialists.
+2.3 Assumptions 
+The system administrator should always keep the system up to date everyday. All information of the day of each child should be sent to the respective day, everyday. Every operation and action taken during that day, should be written on the system, not days later. Ex: if a payment is done, today it should be registered today, if the system does not work then it should be written in a diary of administrator and on the day that it should be registered, administrator will leave a comment about the exact day of payment.
+As we have stated earlier, we will send the information of the day of each kid in Whatsapp, if at one day, the system is not working properly, we will change to SMS not Whatsapp, in order not to delay the information to the parents.
 
-2.3 Assumptions
-The system administrator should always keep the system up to date everyday. All
-information of the day of each child should be sent to the respective day,
-everyday. Every operation and action taken during that day, should be written on
-the system, not days later. Ex: if a payment is done, today it should be registered
-today, if the system does not work then it should be written in a diary of
-administrator and on the day that it should be registered, administrator will leave a
-comment about the exact day of payment.
-As we have stated earlier, we will send the information of the day of each kid in
-Whatsapp, if at one day, the system is not working properly, we will change to
-SMS not Whatsapp, in order not to delay the information to the parents.
+2.3	Constraints
+Before we used to keep our data in Excel and Word files and before we start working with the software we should spend some time transferring data from those files to the app.
+The kindergarten will not have an IT specialist working all time there, so sometimes that the administrator may have problems, they will have to wait for our service and this may take a bit longer.
+Also, for the security reasons because that software will have much confidential and personal information we should have a file for log-ins in the app.
+This app, is going to work only on computers and may be difficult if the administrator would like to use it on the phone or somewhere else.
+2.5	Dependencies
+Our software program will be extremely dependent on the Database that will provide the information for each child for their education field and also about the economic problems. If the kindergarten won’t provide data then the software would be unuseful.
+We are also dependent on the parents a little bit, if they do not like the idea of only sending them Whatsapp messages, we have to change the way of keeping them up to date, anyways this can happen after we start using the app in the kindergarten.
 
-2.4 Constraints
-Before we used to keep our data in Excel and Word files and before we start working
-with the software we should spend some time transferring data from those files to
-the app.
-The kindergarten will not have an IT specialist working all time there, so sometimes that
-the administrator may have problems, they will have to wait for our service and this
-may take a bit longer.
-Also, for the security reasons because that software will have much confidential and
-personal information we should have a file for log-ins in the app.
-This app, is going to work only on computers and may be difficult if the administrator
-would like to use it on the phone or somewhere else.
-2.5 Dependencies
-Our software program will be extremely dependent on the Database that will provide the
-information for each child for their education field and also about the economic
-problems. If the kindergarten won’t provide data then the software would be unuseful.
-We are also dependent on the parents a little bit, if they do not like the idea of only
-sending them Whatsapp messages, we have to change the way of keeping them up to
-date, anyways this can happen after we start using the app in the kindergarten.
+
+3.	Requirements
+
+
+REQ#	Requirements	Comments	Priority	Date	Reviewed
+Approved
+BR_01	The system is designed as a desktop application with two users.	This will be the main platform for users	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_02	The administrator of the system will have all the privileges. Will access in real time all the options of the system and the database for children and employees.	Admin account has access in all functionalities of the system	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_03	Graphical data will be provided for the  administrator and should be accessible all the time. 	This is really important because for the administrator because he must have a clear view of the graphical data in order to access quicker the database	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_04	The system must provide the option for the administrator to register new children and new employees in the kindergarten. 	This is very useful because it makes it easier to coordinate the teacher work since children are in groups and it gives facilities to the admin in order to see how much employees has and all their information.	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_05	Children and employees can be registered only by  admin using the email of the kindergarten.	It is useful to identify the real children and employees of the kindergarten.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_06	The administrator can log in by username and password 	To provide easier log in for admin without using an email 	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+BR_07	The administrator can register new children by providing also other information such as: name, surname, parents name, address, email, date of birth.	The database created with these information will be one of the  main operations of the admin	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_08	The administrator can register new employees by providing also other information such as: name, surname, address, email, date of birth and of course the paycheck.	The database created with these information will be one of the  main operations of the admin	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_09	The administrator can see the data in a tabular form.This is done because tables and graphics give a more clear overview of all the children registered. There will be options for the administrator that make him able to delete or edit unnecessary information 	Through these options the system will never be out of date because the admin will refresh it with new information but also deleting old information about children	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_10	The administrator can see the data in a tabular form.This is done because tables and graphics give a more clear overview of all the employees registered. There will be options for The administrator that make him able to delete or edit unnecessary information 	Through these options the system will never be out of date because the admin will refresh it with new information but also delete old information about employees.	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_11	The admin can add children by creating an account for them with their name, surname, parents name, date of birth and email in their parents name in the form:namesurname@edcationabc.al
+
+
+
+
+	This way the admin will have all the information and it would be easier to access.	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_12	The admin can add employees by creating an account for them with their name, surname, date of birth and email in the form:namesurname@edcationabc.al and there will be a booton with a tick watermark if the employee has taken the salary.	This way the admin will have all the information and it would be easier to access and to not create delays with the paycheck of different employees. 	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+BR_13	The admin will have the opportunity to edit and delete other sections of the system as: activities and general information for the kindergarten that will be viewed by parents also	These two sections are made to promote the business to the parents and to keep them updated to the latest news of the activities.	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_14	The admin can add also new events in the activities section which will be visible for all the parents	The admin will have access to both these two sections.	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_15	The admin will be able to create a quick note for every employee 	This will serve to a deeper understanding of the admin and employees an of course to improve their work	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_16	The admin will be able to have In every page of each child the phone number of one of their parents and when clicked will link immediately to WhatsApp.	WhatsApp is the common and the most useful communication tool that the admin has used with the parents until now 	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_17	the admin will be able to have In every page of each child there the email address in the above mentioned format of their parents and when clicked will link immediately to gmail.	This is a second and a more official communication tool.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_18	the admin will be able to have In every page of every employee  the phone and when clicked will link immediately to WhatsApp.	 WhatsApp is the common and the most useful communication tool that the admin has used with the employees until now 	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_19	the admin will be able to have In every page of each employee the email address in the above mentioned format of their parents and when clicked will link immediately to gmail.	This is a second and a more official communication tool example: paychecks	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+
+
+
+
+
+BR_20	The admin will have a print option 	The print option will serve as a document in case one of the parent wants a summary of all the time that his child has been in the kindergarten	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_21	The admin will be able to see if the parents have or have not done the payment	Here the admin will check the tick sign in each children account and will transmit to the economist.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+BR_22	The admin can change the password and the username in the setting section. 	He is responsible for his own settings.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_23	The parents is the second user 	The accessibility of the parent is limited.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_24	Parents will log in only by the email that it was first created and the password	This is done for security reasons so that only the real parent can have access to the page of his child. 	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_25	The parents will be able to write notes about the teacher of the their child	This will create a better communication with the teacher. 
+	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_26	The parents will not be able to change the format of thaq email	This will be to avoid confusion and or a better and more clear view	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_27	Tha parents will be able to change the password 	They will be responsible for their own settings 	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_28	The parents will be able to view the information of ONLY their child 	With email and password they will see the data of their own child	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+BR_29	The parents will be able to edit the data of their own child and these changes will be reflected to the admin	This is done to create facilities in case some information of the page changes through the time. Example: the phone number	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_30	The parents will be able to leave a note at the end of the page of their child.This change will be reflected also to the admin
+	Parents may leave a note for the teacher or the admin in order to improve the services provided by the kindergarten	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_31	The parents will be able to receive messages on WhatsApp by the admin.	According to a survey that was made in kindergarten WhatsApp has resulted the most common communication tool.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_32	The parents will be able to receive emails by the admin.	This will be for more official updates. 	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_33	The parents will be able to view the activities tab.	In this tab they will be informed about the latest activity of the kindergarten, will have the possibility to view pictures.	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_34	The parents will be able to view the information tab.	Information tab is a tab that serves as promotion page and keeps information that admin wants to make public	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+BR_35	The parents will not be able to edit or delete the activities tab or information tab	These two pages will be only for the admin since parents can give wrong information.	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_36	The parents will be able to see the name of the teacher of their child.	This will facilitate the communication  between teacher and parent	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+BR_37	The parents will be able to put a tick sign if they have done the monthly payment. This change will be reflected to the database of the admin	This will facilitate the admin job which will communicate to the economist	1	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+BR_38	The parents will have the print option.	The print option will be available in the page of every  child and parent will be able to print only the information of their child	2	21/04/2020	Amela
+Rahimi & Sindi Kalo
+
+
+
+
+
+
+
+
+
+3.2	Non-Functional Requirements
+3.2.1	User Interface Requirements
+The first element that appears when the user accesses the software, is the log in page. He must enter the username and the password in order to log in as user. In case the password or the username is not correct the error message will show up saying that one or them or both are incorrect. If they are both correct then he may proceed and log in. After the user logs in the first page he can see is ´´Welcome to ABC´´. In this page a menu with 4 elements will show in his right, where he can access, All customers, Info page, Activities or Employees. The All Customers when clicked opens the database of all the children registered in the kindergarten. The item Info, will redirect you to all the photos of the kindergarten and information about it, even the contact inside the business. Then the user is redirected to a promotion page if he clicks at Activities. When they click it opens a new page with different activities of the kindergarten. And lastly the Employees which redirects at the database of the employees of the business and their information. At the page of the All Customers in the right will be the database table with all the gender, names and surnames of the children and if you double click in one of the names it will show the picture of them with other information like their address and their parents names, contacts, the date of the registration, who is their teacher at the kindergarten and if they have paid the monthly payment. The email links directly at the email page while the phone number will link directly at the WhatsApp. At the Activities page you can access photos updated from the user, admin of the software and kindergarten, they will have a description below and also a calendar will show up if you click for more info in the photo which shows the dates when the activities have been done. There is an Edit button in case you want to edit the calendar and add, edit , delete certain dates. And in the Employees Page you can access the table with all the gender, name and surnames of employees of the business. There will show a picture of the person, their other information, address , phone number, email and monthly salary. Their start and end date of employment is shown up. As in customers phone number and email link one to WhatsApp and the other to email. Also if they have been awarded as the Employee of Month it will show there too.
+3.2.2	Usability
+User-friendly
+•	It is efficient to use from the user side.
+•	The user is able to update data while using and edit the previous data or delete.
+•	The user can learn in a fast time the system.
+Iterative Design
+•	The software should be based on a system that tests, analyze and refine a products or service.
+•	Changes on the design can be made all the time to improve functionality and design.
+•	There can be various models for the same system so when there are problems empirical methods can help to solve the problem.
+3.2.3	Performance
+Specify static and dynamic numerical requirements placed on the system or on human interaction with the system:
+Static numerical requirements-The user number is static only one person, the kindergarten administrator. The information the page will held is static too, the menu offers only four elements, the database of the children, the database of the employees, the page with the information mainly descriptive data but photos may be included and another page with activities data, calendar element and photos of activities. So 4 main functions. The terminal in our case refers to a computer terminal, the administrator will access it only via a computer.
+90% of the redirecting to one of the four pages is done in less than 5 seconds.
+The accessing of the user, log in is done in under 10 seconds.
+Dynamic numerical requirements- All data except the one above is dynamic. The databases itself are dynamic, they can be edited, you can add children or employees, delete them. Also all information is activities is updated from time to time, the calendar too so all the data in the software inside these 4 pages can be changed. Also there are money values, the monthly payment of the children and the salary of the employees which can be changed from time to time depending on the person. 
+The update of the tables, 98% of it is done under 3 seconds.
+The update of the calendar is done under 5 seconds.
+The edit 95% of it is done in under than 10 seconds(including the saving process)
+3.2.3.1	Capacity
+Include measurable capacity requirements (e.g., the number of simultaneous users to be supported, the maximum simultaneous user load, per-user memory requirements, expected application throughput)
+We only will have one user, the administrator so there will be no traffic in the software since only one person will be able to access from his Windows Computer. So he does support the only user it will have, he will have his account so while he is logged in he can use it without any problem.
+Since it has only one user the maximum user load has no sense. There will be only one registered account for the user, only he will be able to access and enter so the maximum person to log in at the same time with the same account is one.
+The throughput of the application is the number of transactions per second our application will be able to handle, and the amount of transactions he can produce over the test. Since we have one user, at a second or time he can only request a service or command so, the throughput is the time the request is redirected to the user. It depends if it in the database, he is clicking a link , updating the calendar, deleting or just accessing information. They all have different accessing time based on the number of task they need to perform. But at a time a request can be requested since a 1 user can only request one thing at a time.
+The pre-user memory requirements are based on the number of users we have which in our case is one, and the memory he uses to access the software. Still this is an estimate, we can´t predict at 100% the accuracy. Sometimes there is an added value to this estimation with GB.
+3.2.3.2	Availability
+Include specific and measurable requirements for:
+Hours of operation-The software can be used any time of the day not only the time the kindergarten is open, the administrator aka user can access and use the system later, access it with its Window Computer the data or the functions he want to use or perform.
+Level of availability required- We predict the most the system to be down 30 min a day which means 105 hours a months if it works 7 days a week and 30 days a month. 
+Coverage for geographic areas- The kindergarten is in Tirana, the user lives so the software is geographically related with Tirana.
+Impact of downtime on users and business operations-If the software is downtime it influences bad on the user, he can’t access data at the moment if he needs them, he can lose a customer in the meantime because he can´t wait to be registered or doesn’t have another time to do the payment. Also it may take a lot of time to edit and update later after the system is up again, meaning more job for the administrator. For the customers too, they can’t handle the gap of time the downtime has created, they will choose a competitor who uses a better system or is more efficient. So we talk lose in money for the business.
+Impact of scheduled and unscheduled maintenance on uptime and maintenance communications procedures´-The monthly payments of the children are scheduled to be done on the software also the salaries of the employees. The software sets a reminder for the payments, for both the business administrator and the children parents before the due time comes. So it is a better way to schedule payments in order to be done in time. It facilities communications between the parents and the administrator, also the communication between the employees and the administrator. 
+Reliability - Not a lot of failures per hours can be accepted, the less downtime for the system is better. But is the system is down or fails for half hour it is predicted in the whole system until he recovers again. More time is damage for the business in money terms.
+3.2.3.3	Latency
+After the internet research about how much of Latency should be for the maximum acceptable time for a service request, since the requests are coming back to the user after he sends it , and is a simple software to help the kindergarten in milliseconds it should vary from 20-40 , which is an optimal value.
+3.2.4	Manageability/Maintainability 
+3.2.4.1	Monitoring
+Include any requirements for product or service health monitoring, failure conditions, error detection, logging, and correction.
+Our software will be health monitored in case it shows warning signs that require the intervention of the tester of the software. Tools we way use to recognize early when services will be unavailable to the user, after the warning sign is sent may be remote call latency and transient exceptions. Also the problems will vary on the scale of difficulty, and threshold is set at each level so for each level there will be a recovery response.  To the user it may show an alert that something went wrong and this alert goes to the tester too, when problems are noticed in the system. In the test plan problems are monitored, there is a correlation between the monitor of the function and the instrumentation, the way they are implemented in the program. All the system health depends on the monitoring and instrumentation. It both of them fail, serious health problems appear to the system, the data will be misunderstood and inaccurate, and the worse part the alert won´t  show to the user he will keep on using and his data may be lost or inaccessible later if the tester doesn´t fix the problem. The situation with the problem will be mitigated before and make sure that the data remains available on the system. If an error happens , the system shows a message to the user, but it keeps on running even though be not be functional, so it won´t be downtime and data become lost.  The server keeps track daily user log ins and activity and is always prepared in case the user increases the number of requests.
+
+3.2.4.2	Maintenance
+In the modularity, the program for the software is decomposed into smaller programs in order to make the interface more standardized. So the whole software is built into smaller modules. Based on the modules other companies or software use we can use SOA too, which is oriented towards the service architecture. All modules are based on functionality, all of them so specific functions for the software and together are implemented on the source code. Since it is a user interface application, modules will be the way how the program will be done.
+About interface Design, in this part is determined how the commands will be given from the user side( the administrator) and how the system will show the data requested on their screen. We will implement one of the two user interfaces GUI and Command Line Interface, but since we have used GUI before we can go with it again.
+The software is updated in cases when bugs will appear to fix them.
+Always the user will be given the option to restart in case the system is not properly working.
+
+
+3.2.4.3	Operations
+
+A light database with sensitive/personal data will be part of the project and user requested that the app should be designed for one admin only in order to avoid any unwanted  action.
+Database will be provided by user and a CRUD will be included to make users job easier, incase data is lost or deleted by mistake or user require a second admin, there will always be a backup database that every change made will be saved but not deleted.
+Application will be connected  with the G-suite API which is connected to Plesk in order to forward the gmails to any customer,  because we are using G-suite there is no need for us  or user to worry about security of the data sent from app to the gmail accounts of customers because G-suite service will take care of it, since G-suite is a google platform most likely there will never be a delay or lost data while doing the process, incase any data is lost or not received it will be very easy for us to find it or deliver.
+3.2.5	System Interface/Integration
+Database – MySQL
+OS- Windows (7,8,10) 
+Desktop Application 
+G-Suite
+Plesk
+There will be 2 type of notifications sent by user to customers, First Gmail format and Second WhatsApp format,  where notifications can be received in any device if Gmail and WhatsApp applications are installed.
+3.2.5.1	Network and Hardware Interfaces
+G-Suite is a google platform  that provides a professional gmail service, but in order to use it you need a domain. When the G-Suite API connection is made with the domain holder (in our case Plesk) messages can be forwarded straight to gmail application, in order to create a connection from our app directly to gmail, we need to  connect Googl’s API to our php code so we can directly email our customers. While with WhatsApp we just need to create a phone number link and execute it on the code to directly main to the number whatever message user desire to write.
+3.2.5.2	Systems Interfaces
+Example systems interface requirements:
+The Admin of ABC will send a file (Gmail Format) to customer (WH@educationabc.al), But before the customer receives the notification file G-Suite and Plesk API-s should be connect so Plesk can directly forward the file to Gmail App so customer  and customer receives. While for WhatsApp is simpler because of the number link it will directly link to the WhatsApp conversation with the pre-made message.
+
+File Structure and  Format
+A1. The FileName file is a fixed length text file.
+A2. The FileName file is a well  formatted Gmail  type.
+A3. The FileName file contains a notification form message. 
+
+3.2.6	Security
+3.2.6.1	Protection
+The user in our case is the administrator itself, he doesn’t need to encrypt the password from itself but using encryption the test can create privacy for the user.
+The databases both the employee table and the customer, is only accessible to the administrator and only he can access, change and edit the information. The CRUD functionalities are performed on the data.
+The tester also will be taking care of any security bugs about the databases since the administrator itself is not specialist.
+3.2.6.2	Authorization and Authentication
+Single-Factor Authentication- is the method we will be using. Since we have a limited number of user, only requesting him a password is enough to grant security. It only asks for his credentials to  verify his identity.
+After authentication is done, the credentials are recognized from the software authorization will happen. You are authorized access to all the data, not only to access them and visualize as user but change and update the information and even delete. Full authentication is granted to the user.
+We can use Pubcookie to create direct relation between the user and the server. Pubcookie will verify his credentials and also a cookie is provided to the user to save all his functions within the system. It will be used for enforcing authentication process.
+
+3.2.7	Data Management
+The database will contain names, contacts, payments of clients we will give a max of 16 characters for names, 14 characters for phone numbers,40 for gmail accounts and unlimited for any tiny or large text, in order to access the database you need to know the username & password and two factor authentication will be the second security, only admin will know the  database login but there’s no need for him to access it because of the CRUD in the application. Data will be managed by Admin himself and if he wants further assistance it will be provided by us.
+
+3.2.8	Standards Compliance
+Specify the requirements derived from existing standards, policies, regulations, or laws (e.g., report format, data naming, accounting procedures, audit tracing).  For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database must be recorded in a trace file with before and after values.
+The ABC software will operate under the educational private institution for children under the state of Albania. Privacy policies are adapted from the ABC kindergarten in accordance with the law in Albania with the provisions of the law ´´On the protection of personal data´´ and the related sub-legal acts. It protects all the data that will be collected for kids under age and their familiars but for the employees too. They grant that this data and information is on the kindergarten use for a good use. The session of the user log in is tracked and if someone tries to steal his authenticity there will be easier to track that is wasn’t the administrator of the kindergarten.
+All the information provided from the parents and employees is secured and never used for selling or traded to people outside the organization. 
+The parents and employees are in accordance that their information is saved in a database and can be used all the time they are part of the educational institution. The only cases the administrator is enforced to share the information is when courts orders to do so or other regulatory authorities of the state.
+At the stated time no accounting requirements will be used since the software until now is used only to track data and specific information but no financial statements and other balance sheets. In case something changes this part of the document will be updated.
+Every tracking of information is done under the rule Albania has undertaken regarding personal data and security laws from European Union.
+3.2.9	Portability
+In order for our notification system to worth as smooth as possible we decided to go with G-Suite us our Email Admin platform and Plesk for hosting control panel, MySQL for database. Our app is mostly host depended that’s why we decided to go with the best platforms.
+3.2.10	Other Non-Functional Requirements
+Please provide all necessary non-functional requirements, similar to the requirements explained in the lesson slides or in the textbook.
+
+3.3	Domain Requirements
+ABC is a Windows software in a kindergarten business in Albania. Its aim is to come to help to the kindergarten administrator in order to have more control over data and make her job easier. But the security of the data is the most important issues. A lot of personal information regarding under-age kids and their parent, and the kindergarten employees is included in the tables of database of the software and we have to be careful in order to not have misconduct. The software is only accessible from one user, and this makes it easier to control the data. It is a private software so no outsider will have direct relation with it and doesn’t depend on another server, like the server of ministry of education in Albania. A stable internet connection is requested from the kindergarten facilities anyway.
